@@ -1,4 +1,4 @@
-# Scripts to receive data from the remote CDK 14
+# Scripts to receive data from the remote telescope
 Load image metadata
 Move files with bad data
 Back logs from NINA, PHD2, and sequences
