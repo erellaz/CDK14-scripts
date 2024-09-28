@@ -1,17 +1,17 @@
 # Scripts to receive data from the remote telescope
 Load image metadata -> 
-Move files with bad data ->
-Back logs from NINA, PHD2, and sequences ->
+Separates files with bad data, based on the metadata ->
+Backup logs from NINA, PHD2, sequences and other stuff ->
 Compress ->
 Put in the sync folder ->
-Post updates to Discord at each step
+Post updates to Discord at each step.
 
 
 The data gets synced by Syncthing in the background and appears on the server side.
 
 
-Move the data to the stage folder ->
+Move the data from Sync to the Stage folder ->
 Decompress ->
-Copy to archive and processing according to name and working directories ->
-Clean up ->
-Update the cloud for each target, calling rclone via subprocess.
+Copy to archive and split to processing directories according to name ->
+Clean up directories ->
+Update the cloud for each target, calling rclone via Subprocess.
